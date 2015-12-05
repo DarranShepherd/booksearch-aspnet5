@@ -1,0 +1,11 @@
+<div ng-app="app">
+    <div ng-view></div>
+</div>
+
+@section scripts
+{
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-route/angular-route.js"></script>
+    <script src="~/app/app.js"></script>
+    <script asp-src-include="~/app/**/*.js" asp-src-exclude="~/app/app.js"></script>
+}
